@@ -10,21 +10,6 @@ import androidx.recyclerview.widget.RecyclerView
 import java.net.URL
 import kotlin.properties.Delegates
 
-class FeedEntry {
-    var title: String = ""
-    var metascore: String = ""
-    var imdbRating: String = ""
-    var imdbVotes = ""
-
-    override fun toString(): String {
-        return """"
-            title = $title
-            metascore = $metascore
-            imdbRating = $imdbRating
-            imdbVotes = $imdbVotes
-            """.trimIndent()
-    }
-}
 val movies = ArrayList<MovieModel>()
 
 class MoviesActivity : AppCompatActivity() {
