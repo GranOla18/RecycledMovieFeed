@@ -10,8 +10,6 @@ import androidx.recyclerview.widget.RecyclerView
 import java.net.URL
 import kotlin.properties.Delegates
 
-val movies = ArrayList<MovieModel>()
-
 class MoviesActivity : AppCompatActivity() {
     private val TAG = "MoviesExam"
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,6 +20,7 @@ class MoviesActivity : AppCompatActivity() {
 
         Log.d(TAG, "onCreate")
 
+        val movies = ArrayList<MovieModel>()
         val titles: Array<String> = resources.getStringArray(R.array.title)
         val years: Array<String> = resources.getStringArray(R.array.year)
         val directors: Array<String> = resources.getStringArray(R.array.director)

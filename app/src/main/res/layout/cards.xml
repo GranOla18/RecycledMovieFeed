@@ -22,11 +22,13 @@
                 android:id="@+id/txtView_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
+                android:layout_marginStart="4dp"
                 android:layout_marginTop="8dp"
                 android:text="Nombre Película"
                 android:textColor="#209A8B"
                 android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -38,7 +40,7 @@
                 android:textColor="#0D7A6D"
                 app:layout_constraintBottom_toTopOf="@+id/txtView_metascore"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/txtView_title"
+                app:layout_constraintStart_toEndOf="@+id/txtView_metascore"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="1.0" />
 
@@ -49,8 +51,8 @@
                 android:text="Metascore"
                 android:textColor="#28B6A5"
                 app:layout_constraintBaseline_toBaselineOf="@+id/txtView_rating"
-                app:layout_constraintEnd_toEndOf="@+id/txtView_title"
-                app:layout_constraintHorizontal_bias="0.764"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.3"
                 app:layout_constraintStart_toEndOf="@+id/txtView_rating" />
 
             <TextView
